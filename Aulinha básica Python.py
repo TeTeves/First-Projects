@@ -1,4 +1,4 @@
-
+#Formulário e IMC
 nome = input("Qual é o seu nome?")
 print("Olá,", nome, "prazer em te conhecer!")
 peso = float(input("Qual é o seu peso?"))
@@ -17,4 +17,10 @@ altura = float(input("digite sua altura:"))
 imc = float(peso / (altura * altura))
 print("O seu IMC é:", imc)
 	
-      
+#Senhas:
+print('Hello, world!')
+nome = input("Digite sua senha (deve conter somente letras):")
+if nome.isalpha():print()
+else: print("A senha não contém somente letras")
+if nome != "Daniel": print ("Acesso negado")
+else: print("Bem-Vindo:")
