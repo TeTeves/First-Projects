@@ -18,7 +18,7 @@ imc = float(peso / (altura * altura))
 print("O seu IMC é:", imc)
 	
 #Senhas:
-print('Hello, world!')
+print('Hello, User!')
 nome = input("Digite sua senha (deve conter somente letras):")
 if nome.isalpha():print()
 else: print("A senha não contém somente letras")
