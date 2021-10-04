@@ -24,3 +24,23 @@ if nome.isalpha():print()
 else: print("A senha não contém somente letras")
 if nome != "Daniel": print ("Acesso negado")
 else: print("Bem-Vindo:")
+
+#Joguinho de Adivinhação:
+import random
+number = random.randint(1, 20)
+player_name = input("Olá, Qual é o seu nome?")
+number_of_guesses = 0
+print('okay! '+ player_name+ ' suponha um número de 1 a 20:')
+while number_of_guesses < 5:
+    guess = int(input())
+    number_of_guesses += 1
+    if guess < number:
+        print('seu número é muito baixo')
+    if guess > number:
+        print('seu número é muito alto')
+    if guess == number:
+        break
+if guess == number:
+    print('Você advinhou seu número em ' + str(number_of_guesses) + ' tentativas!')
+else:
+    print('Você não adivinhou o número, o número era ' + str(number))
