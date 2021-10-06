@@ -44,3 +44,16 @@ if guess == number:
     print('Você advinhou seu número em ' + str(number_of_guesses) + ' tentativas!')
 else:
     print('Você não adivinhou o número, o número era ' + str(number))
+
+#Calculadora Básica Python
+print('Olá Bem-Vindo - Calculadora Python!')
+#var
+numero1 = int (input("Digite o primeiro numero: "))
+numero2 = int (input("Digite o segundo numero: "))
+#escopo
+operaçao = int (input('selecione a operação que deseja realizar:[1] somar [2] subtrair [3] dividir: '))
+print('-----------------------------------------------------------------')
+if operaçao == 1: print('o resultado é:', numero1 + numero2)
+if operaçao == 2: print('o resultado é:', numero1 - numero2)
+if operaçao == 3: print('o resultado é:', numero1 / numero2)
+	else: print('error - selecione uma das opções acima.')
