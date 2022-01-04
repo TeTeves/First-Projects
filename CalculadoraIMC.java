@@ -7,18 +7,18 @@ public class CalculadoraIMC {
 		
 		//variaveis
 		
-		float peso, altura;
-		float imc;
+		int peso, altura;
+		int imc;
 		
 		//entrada de dados
 		
 		do {
 			System.out.println("Digite sua altura");
 			altura = leia.nextFloat();
-		if (altura > 2.50 || altura <= 0) {
-			System.err.println("A altura não pode ser igual ou inferior a 0 e nem superior à 2,50m");	
+		if (altura > 250 || altura <= 0) {
+			System.err.println("A altura nÃ£o pode ser igual ou inferior a 0 e nem superior Ã  250cm");	
 		}
-		}while (altura > 2.50 || altura <= 0);
+		}while (altura > 250 || altura <= 0);
 		
 		do {
 			System.out.println("Digite o seu peso");
@@ -30,7 +30,7 @@ public class CalculadoraIMC {
 		imc = peso / (altura * altura);
 		
 		// resultados
-		System.out.println(" O seu IMC é: " +imc);
+		System.out.println(" O seu IMC Ã©: " +imc);
 	}
 
 }
