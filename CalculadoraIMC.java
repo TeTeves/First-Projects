@@ -7,16 +7,16 @@ public class CalculadoraIMC {
 		
 		//variaveis
 		
-		int peso, altura;
-		int imc;
+		float peso, altura;
+		float imc;
 		
 		//entrada de dados
 		
 		do {
 			System.out.println("Digite sua altura");
 			altura = leia.nextFloat();
-		if (altura > 250 || altura <= 0) {
-			System.err.println("A altura não pode ser igual ou inferior a 0 e nem superior à 250cm");	
+		if (altura > 2.50 || altura <= 0) {
+			System.err.println("A altura não pode ser igual ou inferior a 0 e nem superior à 2.50m");	
 		}
 		}while (altura > 250 || altura <= 0);
 		
